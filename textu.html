@@ -96,9 +96,9 @@ function initialize()
 	let markerControls1 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot1, {
 		type: 'pattern', patternUrl: "data/hiro.patt",
 	})
-	let geometry1 = new THREE.PlaneBufferGeometry(4,4, 6,0);
+	let geometry1 = new THREE.PlaneBufferGeometry(4,4, 4,4);
 	let loader = new THREE.TextureLoader();
-	let texture = loader.load( 'images/libertadores2.png', render );
+	let texture = loader.load( 'images/libertadores3.png', render );
 	let material1 = new THREE.MeshBasicMaterial( { map: texture } );
 	
 	mesh1 = new THREE.Mesh( geometry1, material1 );
